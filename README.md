@@ -38,7 +38,7 @@ Language detection:
 
 **Callbacks**: All methods take a callback as their last parameter. Upon method completion, callbacks are passed an error if exists (otherwise null), followed by a response object or array: `callback(err, data)`.
 
-**Bulk translations**:  Passing an array of strings greater than 5k characters will be result in multiple concurrent asynchronous calls. Once all calls are completed, the response will be parsed, merged, and  passed to the callback. The default maximum concurrent requests is 10. You can override this value by passing in a new limit when you pass in your API key: `require('google-translate')(apiKey, concurrentLimit)`
+**Bulk translations**: Passing an array of strings greater than 5k characters will result in multiple concurrent asynchronous calls. Once all calls are completed, the response will be parsed, merged, and passed to the callback. The default maximum concurrent requests is 10. You can override this value by passing in a new limit when you pass in your API key: `require('google-translate')(apiKey, concurrentLimit)`
 
 ### Translate
 
@@ -48,8 +48,8 @@ Translate one or more strings.
     
 * **strings**: Required. Can be a string or an array of strings
 * **source**: Optional. Google will autodetect the source locale if not specified. [Available languages](https://developers.google.com/translate/v2/using_rest#target)
-* **target**:  Required. Language to translate to. [Available languages](https://developers.google.com/translate/v2/using_rest#target)
-* **callback**:  Required.
+* **target**: Required. Language to translate to. [Available languages](https://developers.google.com/translate/v2/using_rest#target)
+* **callback**: Required.
 
 *Example*: Translate a string to German (de) and autodetect source language
 
@@ -72,7 +72,7 @@ Detect language of string or each string in an array.
     googleTranslate.detectLanguage(strings, callback)
     
 * **strings**: Required. Can be a string or an array of strings
-* **callback**:  Required.
+* **callback**: Required.
  
 *Example*: Detect language from a string
 
@@ -97,7 +97,7 @@ Retrieve all languages supported by the Google Translate API.
     googleTranslate.getSupportedLanguages(target, callback)
     
 * **target**: Optional. If specified, response will include the name of the language translated to the specified target language
-* **callback**:  Required.
+* **callback**: Required.
 
 *Example*: Get all supported language codes
 
