@@ -35,6 +35,8 @@ Language detection:
     });
 
 # API
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcoltongit%2Fnode-google-translate.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcoltongit%2Fnode-google-translate?ref=badge_shield)
+
 
 **Callbacks**: All methods take a callback as their last parameter. Upon method completion, callbacks are passed an error if exists (otherwise null), followed by a response object or array: `callback(err, data)`.
 
@@ -127,3 +129,7 @@ Forks and pull requests welcome!
 # Author
 
 Maintained by [Localize](https://localizejs.com).
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcoltongit%2Fnode-google-translate.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcoltongit%2Fnode-google-translate?ref=badge_large)
